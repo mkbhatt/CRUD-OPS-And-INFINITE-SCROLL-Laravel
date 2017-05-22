@@ -1,6 +1,6 @@
 # CRUD Operations And Infinite Scrolling | PHP | Laravel Framework
 
-CRUD (Create-Read-Update-Delete) OPERATIONS And Infinite SCROLLING Sample Application Built On PHP Laravel Framework
+CRUD (Create-Read-Update-Delete) Operations And Infinite Scrolling Sample Application Built On PHP Laravel Framework
 
 ## This Sample App Is Useful For Following People
 
