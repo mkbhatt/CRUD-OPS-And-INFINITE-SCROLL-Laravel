@@ -19,6 +19,7 @@ CRUD (Create-Read-Update-Delete) Operations And Infinite Scrolling Sample Applic
 * MVC Code
 * Model Code
 * ORM & SQL Queries
+* Toast Notification
 
 
 ### Prerequisites
