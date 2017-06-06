@@ -14,12 +14,14 @@ CRUD (Create-Read-Update-Delete) Operations And Infinite Scrolling Sample Applic
 * BASIC CRUD ( CREATE - READ - UPDATE - DELETE ) Operations Via AJAX 
 * Database Interactions
 * OOP Programming
-* Basic Animations Of Jquery & JavaScript
-* AJAX 
 * MVC Code
 * Model Code
 * ORM & SQL Queries
 * Toast Notification
+* JavaScript Pagination Logic
+* BackEnd Pagination Logic
+* Basic Animations Of Jquery & JavaScript
+* AJAX
 
 
 ### Prerequisites
