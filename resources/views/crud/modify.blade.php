@@ -104,7 +104,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="modi_submit();" >Submit</button>
+                <button type="button" class="btn btn-primary" id="sub_ok" onclick="modi_submit();" >Submit</button>
             </div>
         </div>
     </div>
@@ -116,6 +116,12 @@
     var page;
     var ajaxurl = '{{URL::to('crud-get')}}';
     dt.push(year);
+
+    setInterval(function () {
+    if ($("#post_title").val() =="" || $("#post_description").val() == ""){ $('#sub_ok').attr('disabled',true);}
+    else{ $('#sub_ok').attr('disabled',false); }
+    }, 1000);
+    
     
     i=1;
     
@@ -307,7 +313,7 @@
     
     var modi_form = new FormData($("#modi_form")[0]);
     // console.log(modi_form);
-    
+
     $.ajax({
         
         type:"POST",
