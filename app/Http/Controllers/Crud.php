@@ -113,7 +113,7 @@ function GetAll(Request $request){
             $year = $input['year'];
              
             $query =  DB::select("select id,title,description,created_on,modified_on,slug_key 
-                                  from crud_content where DATE_FORMAT(created_on,'%Y') = $year order by created_on desc");
+                                  from crud_content where DATE_FORMAT(created_on,'%Y') = $year order by modified_on desc");
 
 
             
@@ -203,8 +203,7 @@ function GetAll(Request $request){
               $post_id = $input['post_id'];
               $post_title = ucwords($input['post_title']);
               $post_description = ucwords($input['post_description']);
-              $date = date_create();
-              $stamp = date_timestamp_get($date);
+              $stamp = $input['post_mod'];
               $slug_key = strtolower((string)(str_replace(' ','-',$input['post_title'])));
 
               DB::table('crud_content')->where('id',$post_id)->update(['title' =>ucwords($post_title),'description'=>ucwords($post_description),'slug_key'=>$slug_key,'modified_on'=>$stamp]);
