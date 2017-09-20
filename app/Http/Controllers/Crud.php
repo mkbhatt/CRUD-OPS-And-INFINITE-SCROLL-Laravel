@@ -200,6 +200,7 @@ function GetAll(Request $request){
 
             try{
 
+              $post_id = $input['post_id'];
               $post_title = ucwords($input['post_title']);
               $post_description = ucwords($input['post_description']);
               $date = date_create();
